@@ -7,6 +7,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// clrscr doesn't exist on Linux
+void clrscr(void)
+{
+   system("clear");
+}
+
 main()
 {
    /*  Variable declaration  */
